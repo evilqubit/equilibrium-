@@ -1,0 +1,31 @@
+{
+  "name": "equilibrium",
+  "version": "0.0.1",
+  "description":"Track twitter hashtags with blinking rgb led - arduino nodejs ",
+  "author": {
+    "name": "Simon Tadros",
+    "email": "simonstadros@gmail.com"
+  },
+  "private": false,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "arduino",
+    "rgb led",
+    "Twitter Bot",
+    "nodejs",
+   
+  ],
+  "dependencies": {
+    "request":"*",
+    "ntwitter":"*",
+    "johnny-five":"~0.8.0",
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evilqubit/equilibrium-.git"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
