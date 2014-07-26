@@ -8,6 +8,11 @@ var twitter = require('ntwitter');
 var controller = require('./controller.js');
 
 
+
+
+
+
+
 //Twitter API Config
 var twit = new twitter(config);
 
