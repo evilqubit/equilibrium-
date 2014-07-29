@@ -23,19 +23,24 @@ var five = require("johnny-five");
 
 
 
-exports.rgb = function(options){
+exports.rgb = function(options,func){
+
+	if (options.life==true && options.death==true) {led.color("FFFFFF");}
+
+	else {
 
   if (options.life==true) {led.color("#00FF00");}
  
-  if (options.death==true) {led.color("#FF0000");}
+  if (options.death==true) {led.color("#FF0000");} }
+ 
+ 
 
-
-  console.log(options) 
+  //console.log(options) 
 	
 	setInterval(function() {
 
 led.off();
 
-	},1000)
-
+	},2000)
+ func(options);
 		};

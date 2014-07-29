@@ -41,7 +41,10 @@ twit.verifyCredentials(function (err, data) {
 
 			}
 
-			if(options.death == true || options.life==true) controller.rgb(options)
+			if(options.death == true || options.life==true) controller.rgb(options,function(options){
+
+				console.log(options);
+			})
 		
 		}
 	});
